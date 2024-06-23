@@ -1,0 +1,31 @@
+def num_of_digits(num):
+    c = 0
+    num = abs(num)
+    if num == 0:
+        return 1
+    else:
+        for i in range(num):
+            while num != 0:
+                c += 1
+                num //= 10
+            return c
+
+  ИЛИ
+
+      
+def num_of_digits(n):
+    return next(i for i in range(1, 100) if abs(n) < 10**i)
+
+
+Создайте функцию, которая будет возвращать целое число, содержащее количество цифр в заданном целом числе num.
+
+Примеры
+num_of_digits(1000) ➞ 4
+
+num_of_digits(12) ➞ 2
+
+num_of_digits(1305981031) ➞ 10
+
+num_of_digits(0) ➞ 1
+Примечание
+Попробуйте решить эту задачу, не используя строки!
