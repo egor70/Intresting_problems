@@ -1,0 +1,27 @@
+def find_smallest_number(my_list):
+    min_num = my_list[0]
+    min_index = 0
+    for i in range(len(my_list)):
+        if my_list[i] < min_num:
+            min_num = my_list[i]
+            min_index = i
+    return  min_num, min_index
+
+# Найдите самое маленькое числа в списке
+# Массивы
+# Сортировка
+# Циклы
+# Числа
+# Легко
+# Напишите функцию, которая принимает на вход список чисел, и возвращает самое маленькое число из этого списка.
+# 
+# Примеры
+# find_smallest_number([34, 88, 2]) # 2
+# 
+# find_smallest_number([5, 5, 5]) # 5
+# 
+# find_smallest_number([-7, 1.3, 0]) # -7
+# 
+# Примечание
+# Не забудьте вернуть результат с помощью оператора return.
+Также я нашел индекс минимального элемента min_index
