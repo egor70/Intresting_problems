@@ -36,8 +36,6 @@ min_a = math.ceil(a * N / 100.0)
 min_b = math.ceil(b * N / 100.0)
 min_c = math.ceil(c * N / 100.0)
 
-if min_a + min_b + min_c > N:
-    print("EMPTY")
 
 
 solutions = []
