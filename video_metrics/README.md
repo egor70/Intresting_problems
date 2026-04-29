@@ -22,19 +22,19 @@
 
 ## 🗂 Структура проекта
 ```
-Home-Library-API/
-├── my_library/
-│ ├── main.py # 🚀 Точка входа FastAPI
-│ ├── database.py # 🛠 Engine и сессии БД
-│ ├── models/
-│ │ └── books.py # 🏗 SQLAlchemy модели
-│ ├── schemas/
-│ │ └── books.py # 📐 Pydantic схемы
-│ ├── routers/
-│ │ └── books.py # 🌐 API роуты
-│ └── repository/
-│ └── books.py # 💾 Репозиторий паттерны
-└── README.md
+video_metrics/
+├── cli.py                    # 🚀 Точка входа (аргументы CLI)
+├── readers.py                # 📖 Чтение CSV файлов
+├── reports.py                # 📊 Логика отчётов + регистрация
+├── tests/
+│   ├── __init__.py          # 🧪 Маркер пакета тестов
+│   ├── test_readers.py      # ✅ Тесты для readers.py
+│   ├── test_reports.py      # ✅ Тесты для reports.py
+│   └── fixtures/            # 📁 Примеры CSV файлов
+│       ├── stats1.csv       # 📊 Тестовые данные 1
+│       └── stats2.csv       # 📊 Тестовые данные 2
+├── requirements-dev.txt      # 📦 Зависимости (tabulate, pytest)
+└── README.md                # 📚 Документация проекта
 ```
 
 
