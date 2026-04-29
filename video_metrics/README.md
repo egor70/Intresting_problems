@@ -59,25 +59,27 @@ title,ctr,retention_rate,views,likes,avg_watch_time
 ```
 
 🚀 Быстрый старт
+
 1. Клонирование
+```
 bash
 git clone <repository-url>
 cd video_metrics
-
+```
 
 
 2. Установка зависимостей
-bash
+```bash
 pip install -r requirements-dev.txt
-
+```
 
 3. Запуск анализа
-bash
+```bash
 python cli.py --files stats1.csv stats2.csv --report clickbait
-
+```
 
 4. Результат
-bash
+```bash
 +--------------------------------------------------------------------+-----------+----------------+
 | Название видео                                                     | CTR (%)   | Удержание (%) |
 +====================================================================+===========+================+
@@ -95,3 +97,4 @@ bash
 
 Всего найдено: 11 видео
 Средний CTR: 21.2%
+```
