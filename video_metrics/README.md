@@ -21,27 +21,23 @@
 ---
 
 ## 🗂 Структура проекта
-video_metrics/
-│
-├── cli.py
-├── readers.py
-├── reports.py
-│
-├── tests/
-│   ├── __init__.py
-│   ├── test_readers.py
-│   ├── test_reports.py
-│   │
-│   └── fixtures/
-│       ├── stats1.csv
-│       └── stats2.csv
-│
-├── requirements-dev.txt
-│
+```
+Home-Library-API/
+├── my_library/
+│ ├── main.py # 🚀 Точка входа FastAPI
+│ ├── database.py # 🛠 Engine и сессии БД
+│ ├── models/
+│ │ └── books.py # 🏗 SQLAlchemy модели
+│ ├── schemas/
+│ │ └── books.py # 📐 Pydantic схемы
+│ ├── routers/
+│ │ └── books.py # 🌐 API роуты
+│ └── repository/
+│ └── books.py # 💾 Репозиторий паттерны
 └── README.md
+```
 
 
----
 
 ## 📋 Формат входных данных (CSV)
 
