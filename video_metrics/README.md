@@ -22,18 +22,23 @@
 
 ## 🗂 Структура проекта
 video_metrics/
+│
 ├── cli.py # 🚀 Точка входа (аргументы CLI)
 ├── readers.py # 📖 Чтение CSV файлов
 ├── reports.py # 📊 Логика отчётов + регистрация
+│
 ├── tests/ # 🧪 Тесты
 │ ├── init.py
 │ ├── test_readers.py
 │ ├── test_reports.py
+│ │
 │ └── fixtures/ # 📁 Примеры CSV файлов
 │ ├── stats1.csv
 │ └── stats2.csv
-├── requirements-dev.txt # 📦 Зависимости
-└── README.md
+│
+├── requirements-dev.txt # 📦 Зависимости для разработки
+│
+└── README.md # 📚 Документация
 
 
 ---
